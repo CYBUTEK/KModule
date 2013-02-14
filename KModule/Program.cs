@@ -16,7 +16,11 @@ namespace KModule
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MainForm());
+            MainForm form = new MainForm();
+            if (!form.IsDisposed)
+            {
+                Application.Run(new MainForm());
+            }
         }
     }
 }

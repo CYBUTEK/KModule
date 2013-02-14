@@ -37,13 +37,13 @@
             this.button2 = new System.Windows.Forms.Button();
             this.buttonUninstall = new System.Windows.Forms.Button();
             this.buttonInstall = new System.Windows.Forms.Button();
+            this.pictureButton1 = new KModule.PictureButton();
             this.buttonMinimise = new KModule.PictureButton();
             this.buttonClose = new KModule.PictureButton();
             this.titleBar1 = new KModule.TitleBar();
-            this.pictureButton1 = new KModule.PictureButton();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureButton1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.buttonMinimise)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.buttonClose)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureButton1)).BeginInit();
             this.SuspendLayout();
             // 
             // listModules
@@ -131,6 +131,19 @@
             this.buttonInstall.UseVisualStyleBackColor = true;
             this.buttonInstall.Click += new System.EventHandler(this.buttonInstall_Click);
             // 
+            // pictureButton1
+            // 
+            this.pictureButton1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureButton1.Image = global::KModule.Properties.Resources.help;
+            this.pictureButton1.ImageDown = global::KModule.Properties.Resources.help_down;
+            this.pictureButton1.ImageHover = global::KModule.Properties.Resources.help_hover;
+            this.pictureButton1.Location = new System.Drawing.Point(452, 1);
+            this.pictureButton1.Name = "pictureButton1";
+            this.pictureButton1.Size = new System.Drawing.Size(24, 24);
+            this.pictureButton1.TabIndex = 11;
+            this.pictureButton1.TabStop = false;
+            this.pictureButton1.Visible = false;
+            // 
             // buttonMinimise
             // 
             this.buttonMinimise.BackColor = System.Drawing.Color.Transparent;
@@ -167,18 +180,6 @@
             this.titleBar1.Text = "Version 1.0";
             this.titleBar1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // pictureButton1
-            // 
-            this.pictureButton1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureButton1.Image = global::KModule.Properties.Resources.help;
-            this.pictureButton1.ImageDown = global::KModule.Properties.Resources.help_down;
-            this.pictureButton1.ImageHover = global::KModule.Properties.Resources.help_hover;
-            this.pictureButton1.Location = new System.Drawing.Point(452, 1);
-            this.pictureButton1.Name = "pictureButton1";
-            this.pictureButton1.Size = new System.Drawing.Size(24, 24);
-            this.pictureButton1.TabIndex = 11;
-            this.pictureButton1.TabStop = false;
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -206,9 +207,9 @@
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "KModule";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureButton1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.buttonMinimise)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.buttonClose)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureButton1)).EndInit();
             this.ResumeLayout(false);
 
         }

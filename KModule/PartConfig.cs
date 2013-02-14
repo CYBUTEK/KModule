@@ -171,7 +171,7 @@ namespace KModule
                         {
                             string[] lineSplit = line.Split('=');
 
-                            if (lineSplit[0].Trim() == "name")
+                            if (lineSplit[0].Trim() == "name" && lineSplit[1].Trim() == moduleName)
                             {
                                 isModuleToRemove = true;
                             }

@@ -15,13 +15,19 @@ namespace KModule
     {
         List<PartConfig> _parts;
         List<ModuleConfig> _modules;
-        string _kspDirectory = @"D:\Games\Kerbal Space Program";
+        string _kspDirectory = Environment.CurrentDirectory;
 
         public MainForm()
         {
             InitializeComponent();
             buttonMinimise.LeftClick += buttonMinimise_LeftClick;
             buttonClose.LeftClick += buttonClose_Clicked;
+
+            if (!File.Exists("KSP.exe"))
+            {
+                MessageBox.Show("This application must be placed with the KSP executable.");
+                this.Close();
+            }
 
             LoadParts();
             LoadModules();
